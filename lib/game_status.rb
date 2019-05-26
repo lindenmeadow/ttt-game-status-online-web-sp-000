@@ -34,5 +34,12 @@ def over?(board)
 end
 
 def winner(board)
-
+  WIN_COMBINATIONS.detect do |i|
+   if board[i[0]] == "X" && board[i[1]] == "X" && board[i[2]] == "X"
+     puts "X is winner"
+   elsif 
+     board[i[0]] == "O" && board[i[1]] == "O" && board[i[2]] == "O"
+     puts "O is winner"
+   end
+ end
 end
