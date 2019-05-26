@@ -14,7 +14,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.detect {|i| i[0] == "X" && i[1] == "X" && i[2] == "X"} || WIN_COMBINATIONS.detect {|i| i[0] == "O" && i[1] == "O" && i[2] == "O"} ||
+  WIN_COMBINATIONS.detect {|i| i[0] == "X" && i[1] == "X" && i[2] == "X"} || WIN_COMBINATIONS.detect {|i| i[0] == "O" && i[1] == "O" && i[2] == "O"}
 end
 
 
