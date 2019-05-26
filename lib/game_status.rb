@@ -26,13 +26,10 @@ end
 
 
 def full?(board)
-  board.each do |i|
-    if board.any? == " " || board.any? == nil
-      return false
-    else
-      return true
-    end
-  end
+  if board.none? {|i| i == " " || i == nil}
+    return false
+  else
+    return true
 end
 
 
