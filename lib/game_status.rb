@@ -29,7 +29,7 @@ def full?(board)
   board.each do |i|
     if i == "X" || i == "O"
       return true
-    else
+    elsif i == " " || i == "" || i == nil
       return false
     end
   end
