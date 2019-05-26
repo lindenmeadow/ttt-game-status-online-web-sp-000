@@ -14,14 +14,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  win_combination = WIN_COMBINATIONS
-  win_combination.each do |i|
-    if i.all? == "X" || i.all? == "O"
-      return true
-    else
-      return false
-    end
-  end
+  
 end
 
 
@@ -31,11 +24,11 @@ end
 
 
 def draw?(board)
-
+  
 end
 
 def over?(board)
-  if won?(board) || full?(board) || draw?(board)
+  if won?(board) || draw?(board)
     return true
   else
     return false
